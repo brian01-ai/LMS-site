@@ -169,6 +169,8 @@ export const addUserRating = async (req, res) => {
     }
     await course.save();
 
-    return res.json({success:true, message: 'Rating Added!'})
-  } catch (error) {res.json({success:false, message: error.message}) }
+    return res.json({ success: true, message: "Rating Added!" });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
+  }
 };

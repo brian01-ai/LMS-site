@@ -83,7 +83,7 @@ const CourseDetails = () => {
 
           <p className="text-sm">
             Course by{" "}
-            <span className="text-blue-600 underline">Greatstack</span>
+            <span className="text-blue-600 cursor-pointer underline">Greatstack</span>
           </p>
 
           <div className="pt-8 text-gray-800">
