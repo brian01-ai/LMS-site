@@ -99,7 +99,7 @@ const AddCourse = () => {
     });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
     try {
       e.preventDefault();
       if (!image) {
