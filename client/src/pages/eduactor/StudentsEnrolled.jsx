@@ -6,7 +6,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const StudentsEnrolled = () => {
-  const { backendUrl, token, isEducator } = useContext(AppContext);
+  const { backendUrl, getToken, isEducator } = useContext(AppContext);
 
   const [enrolledStudents, setEnrolledStudents] = useState(null);
 
