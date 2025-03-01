@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import uniqid from "uniqid";
-import quill from "quill";
 import Quill from "quill";
 import { assets } from "../../assets/assets";
 import { AppContext } from "../../context/AppContext";
@@ -114,7 +113,7 @@ const AddCourse = () => {
         courseContent: chapters,
       };
 
-      const formData = new formData();
+      const formData = new FormData();
       formData.append("courseData", JSON.stringify(courseData));
       formData.append("image", image);
 
